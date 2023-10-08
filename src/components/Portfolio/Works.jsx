@@ -23,7 +23,7 @@ const Works = () => {
     <section id='works'>
       <h2 className='worksTitle'>My Projects</h2>
       <span className="worksDescription">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sed fugit minima nesciunt aspernatur deserunt obcaecati similique itaque amet iure, rem est. Consectetur quasi veritatis non odit incidunt quas fugiat libero obcaecati porro nam.
+        Here are some of my projects that I have worked on.
       </span>
 
       <div className="workContainer">
