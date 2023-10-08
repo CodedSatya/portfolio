@@ -34,19 +34,19 @@ const Contact = () => {
     {
       'id': 2,
       'name': 'linkedin',
-      'link': 'https://www.linkedin.com/',
+      'link': 'https://www.linkedin.com/in/satyam-sekhar-barik-b909b7228/',
       'img':linkedin
     },
     {
       'id': 3,
       'name': 'twitter',
-      'link': 'https://www.twitter.com/',
+      'link': 'https://x.com/SatyamBarik9?t=o7XGZUgOg3CRCWy5IbUqbA&s=09',
       'img':twitter
     },
     {
       'id': 4,
       'name': 'instagram',
-      'link': 'https://www.instagram.com/',
+      'link': 'https://www.instagram.com/satyam_barik_26/',
       'img':instagram
     }
   ]
