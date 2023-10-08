@@ -38,6 +38,7 @@
 
 .workImg{
   margin: 0.5rem;
+  width: 95%;
   object-fit: cover;
   border-radius: 0.5rem;
 }

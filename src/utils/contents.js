@@ -85,3 +85,7 @@ export const aboutPara = "I am a skilled web-developer with experience in creati
 
 
 //-----------------------------------------------------------------------------------------------------------------
+
+
+// Contact section utils-------------------------------------------------------------------------------------------
+export const contactDescription = "Please fill out the form below to send me an email and I will get back to you as soon as possible.";
