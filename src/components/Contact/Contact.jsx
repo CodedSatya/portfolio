@@ -1,12 +1,28 @@
-import React from 'react'
-import { contactDescription } from '../../utils/contents'
-import './Contact.css'
-import github from '../../assets/socials/github.png'
-import linkedin from '../../assets/socials/linkedin.png'
-import twitter from '../../assets/socials/twitter.png'
-import instagram from '../../assets/socials/instagram.webp'
+import React, { useRef } from 'react';
+import { contactDescription } from '../../utils/contents';
+import './Contact.css';
+import github from '../../assets/socials/github.png';
+import linkedin from '../../assets/socials/linkedin.png';
+import twitter from '../../assets/socials/twitter.png';
+import instagram from '../../assets/socials/instagram.webp';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_pry2hfs', 'template_en0bwzk', form.current, 'e7tUk2dctyDrwr2oD')
+      .then((result) => {
+          console.log(result.text);
+          alert("Email sent successfully!");
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
 
   const socials = [
     {
@@ -54,11 +70,11 @@ const Contact = () => {
         <span className="contactDescription">
           {contactDescription}
         </span>
-        <form action="" className='contactForm'>
-          <input type="text" className='name' placeholder='Your name' />
-          <input type="email" className="email" placeholder='someone@example.com'/>
-          <textarea name="message" rows="5" className='msg' placeholder='Your message.'></textarea>
-          <button className="submitBtn" type='submit' value="send">Submit</button>
+        <form ref={form} className='contactForm' onSubmit={sendEmail}>
+          <input type="text" className='name' placeholder='Your name' name='from_name'/>
+          <input type="email" className="email" placeholder='someone@example.com' name='your_email'/>
+          <textarea name="message" rows="5" className='msg' placeholder='Your message.' ></textarea>
+          <button className="submitBtn" type='submit' value="Send">Submit</button>
 
           <div className="links">
             {socialLinks}

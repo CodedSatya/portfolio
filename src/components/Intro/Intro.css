@@ -58,9 +58,15 @@
   color: white;
 }
 
-
-@media screen and (max-width:550px) {
+@media screen and (max-width:1151px) {
   .bg{
     right: -40vw;
   }
 }
+
+/* @media screen and (max-width:550px) {
+  .bg{
+    right: -80vw;
+  }
+} */
+
