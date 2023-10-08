@@ -1,0 +1,94 @@
+
+#works{
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 55rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+
+}
+
+.worksTitle{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.worksDescription{
+  font-size: 1rem;
+  font-weight: 300;
+  /* margin-bottom: 1rem; */
+}
+
+.workContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.workImg{
+  margin: 0.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.workcard{
+  width: 20rem;
+  height: 20rem;
+  background: rgb(50, 50, 50);
+  border-radius:0.5rem;
+  margin: 1rem 2rem;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.workcard:hover{
+
+  box-shadow: 2px 2px 20px rgb(20, 20, 20);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.workcard a{
+  color: #6f6f6f44;
+}
+
+.workcard a:hover{
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.workDetails{
+  padding: 1rem;
+  /* margin: 0.5rem; */
+  height:8rem ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+}
+
+.workTitle{
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* margin-bottom: 1rem; */
+}
+
+.workDescription{
+  font-size: 1rem;
+  font-weight: 300;
+  /* margin-bottom: 1rem; */
+}
+

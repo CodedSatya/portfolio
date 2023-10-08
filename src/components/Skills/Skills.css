@@ -28,15 +28,24 @@
   width: 100vw;
   max-width: 80%;
   text-align: left;
-
 }
 
 .skillBar{
+  color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background: rgb(50, 50, 50);
+}
+
+.skillBar:hover{
+
+  box-shadow: 1px 1px 15px rgb(95, 95, 95);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
 
 .skillImg{
