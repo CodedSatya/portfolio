@@ -14,7 +14,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_pry2hfs', 'template_en0bwzk', form.current, 'e7tUk2dctyDrwr2oD')
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           alert("Email sent successfully!");
